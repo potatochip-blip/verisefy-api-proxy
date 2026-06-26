@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "http://104.209.184.124:8000/api/$1"
+      "destination": "http://104.209.184.124:8000/$1"
     }
   ],
   "headers": [
@@ -11,7 +11,7 @@
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "*" },
         { "key": "Access-Control-Allow-Methods", "value": "GET, POST, PUT, PATCH, DELETE, OPTIONS" },
-        { "key": "Access-Control-Allow-Headers", "value": "Authorization, Content-Type, Accept" }
+        { "key": "Access-Control-Allow-Headers", "value": "Authorization, Content-Type, Accept, Idempotency-Key" }
       ]
     }
   ]
